@@ -1,10 +1,8 @@
 import { ReactNode, useEffect, useState } from "react";
 import {
 	createBrowserRouter,
-	Navigate,
 	redirect,
 	RouterProvider,
-	useNavigate,
 } from "react-router-dom";
 import { Login, Home } from "./pages";
 import User from "./interfaces/User";
@@ -23,6 +21,7 @@ const ProtectedRoute = ({ user, children }: ProtectedRouteProps) => {
 
 const router = (user: User | null) =>
 	createBrowserRouter([
+		{ path: "/login", element: <Login /> },
 		{
 			path: "/",
 			element: (

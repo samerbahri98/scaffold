@@ -1,3 +1,5 @@
+#!/usr/bin/env ts-node
+
 import { NodePlopAPI } from "plop";
 
 export default function (plop: NodePlopAPI) {
@@ -39,7 +41,7 @@ export default function (plop: NodePlopAPI) {
 		actions: [
 			{
 				type: "add",
-				path: "src/pages/{{name}}.js",
+				path: "src/pages/{{name}}.tsx",
 				templateFile: "templates/page.hbs",
 			},
 		],

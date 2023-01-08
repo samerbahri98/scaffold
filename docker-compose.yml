@@ -4,8 +4,8 @@ services:
   client:
     image: node:18-alpine3.17
     working_dir: /var/www
-    command: yarn dev --host
+    command: yarn workspace web-ui dev --host
     ports:
       - 5173:5173
     volumes:
-      - ./client:/var/www
+      - .:/var/www
