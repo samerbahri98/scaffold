@@ -1,0 +1,11 @@
+---
+version: "3.8"
+services:
+  client:
+    image: node:18-alpine3.17
+    working_dir: /var/www
+    command: yarn dev --host
+    ports:
+      - 5173:5173
+    volumes:
+      - ./client:/var/www
