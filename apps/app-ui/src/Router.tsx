@@ -1,4 +1,4 @@
-import { ReactNode, useEffect, useState } from 'react';
+import { Component, useEffect, useState } from 'react';
 import {
   createBrowserRouter,
   redirect,
@@ -8,7 +8,7 @@ import { Login, Home } from './pages';
 import { User } from '@skfold/ts-interfaces';
 
 type ProtectedRouteProps = {
-  children: React.ComponentElement<{}, any>;
+  children: React.ComponentElement<object, Component>;
   user: User | null;
 };
 
@@ -35,7 +35,7 @@ const router = (user: User | null) =>
   ]);
 
 const Router = () => {
-  const [user, setUser] = useState<User | null>(null);
+  const [user] = useState<User | null>(null);
   return <RouterProvider router={router(user)} />;
 };
 
