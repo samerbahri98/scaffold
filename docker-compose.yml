@@ -1,0 +1,11 @@
+---
+version: "3.8"
+services:
+  web-ui:
+    image: node:${NODE_TAG}
+    working_dir: /var/www
+    command: yarn nx run app-ui:serve:development --host
+    ports:
+      - 4200:4200
+    volumes:
+      - .:/var/www
