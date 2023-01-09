@@ -933,6 +933,23 @@
     resolve.exports "1.1.0"
     tslib "^2.3.0"
 
+"@nrwl/js@15.4.5":
+  version "15.4.5"
+  resolved "https://registry.yarnpkg.com/@nrwl/js/-/js-15.4.5.tgz#0ba9e971d371dcdcb34a2515ed159cb2fae4a4c3"
+  integrity sha512-YHcgK2Iik34RAYxrdJQXSlXbp9VFD2LpzLuWo21c1CDumFPM80fn8EEx+wj9h5yK4w/ulW9JvX73ECATmDFKPw==
+  dependencies:
+    "@nrwl/devkit" "15.4.5"
+    "@nrwl/linter" "15.4.5"
+    "@nrwl/workspace" "15.4.5"
+    chalk "4.1.0"
+    fast-glob "3.2.7"
+    fs-extra "^10.1.0"
+    ignore "^5.0.4"
+    js-tokens "^4.0.0"
+    minimatch "3.0.5"
+    source-map-support "0.5.19"
+    tree-kill "1.2.2"
+
 "@nrwl/linter@15.4.5":
   version "15.4.5"
   resolved "https://registry.yarnpkg.com/@nrwl/linter/-/linter-15.4.5.tgz#b68c83ed38b36576922096c61da1b4134a9a261e"
@@ -949,6 +966,20 @@
   integrity sha512-UMtxXxTWqbyZOdyD9Zt2IsDY/JVXIFZtY6pO4jPha7+UIHWf2Zi8Dszs6UoUTS4mqpNMIkKymwpZGtkDTfiAJA==
   dependencies:
     nx "15.4.5"
+
+"@nrwl/vite@^15.4.5":
+  version "15.4.5"
+  resolved "https://registry.yarnpkg.com/@nrwl/vite/-/vite-15.4.5.tgz#b0e6e43558ebf744d1d20e0cb3161f2f09ca1b81"
+  integrity sha512-3BorqncBmG2NBmZHBCCyFQaZZJU3ERONelLSgWk06BfP3jeXtu9lKTiwqRxZtl3Oab6Etxob/0Gxu4wg3z12qw==
+  dependencies:
+    "@nrwl/devkit" "15.4.5"
+    "@nrwl/js" "15.4.5"
+    "@nrwl/workspace" "15.4.5"
+    "@phenomnomnominal/tsquery" "4.1.1"
+    "@swc/helpers" "^0.4.11"
+    chalk "4.1.0"
+    dotenv "~10.0.0"
+    enquirer "~2.3.6"
 
 "@nrwl/workspace@15.4.5":
   version "15.4.5"
@@ -1024,6 +1055,13 @@
   integrity sha512-BPS4ynJW/o92PUR4wgriz2Ud5gpST5vz6GQfMixEDK0Z8ZCUv2M7SkBLykH56T++Xs+8ln9zTGbOvNGIe02/jw==
   dependencies:
     "@sinonjs/commons" "^1.7.0"
+
+"@swc/helpers@^0.4.11":
+  version "0.4.14"
+  resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.4.14.tgz#1352ac6d95e3617ccb7c1498ff019654f1e12a74"
+  integrity sha512-4C7nX/dvpzB7za4Ql9K81xK3HPxCpHMgwTZVyf+9JQ6VUbn9jjZVN7/Nkdz/Ugzs2CSjqnL/UPXroiVBVHUWUw==
+  dependencies:
+    tslib "^2.4.0"
 
 "@tootallnate/once@2":
   version "2.0.0"
@@ -2297,6 +2335,11 @@ globals@^11.1.0:
   version "11.12.0"
   resolved "https://registry.yarnpkg.com/globals/-/globals-11.12.0.tgz#ab8795338868a0babd8525758018c2a7eb95c42e"
   integrity sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==
+
+globrex@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/globrex/-/globrex-0.1.2.tgz#dd5d9ec826232730cd6793a5e33a9302985e6098"
+  integrity sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==
 
 graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.9:
   version "4.2.10"
@@ -3932,6 +3975,14 @@ source-map-support@0.5.13:
     buffer-from "^1.0.0"
     source-map "^0.6.0"
 
+source-map-support@0.5.19:
+  version "0.5.19"
+  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.19.tgz#a98b62f86dcaf4f67399648c085291ab9e8fed61"
+  integrity sha512-Wonm7zOCIJzBGQdB+thsPar0kYuCIzYvxZwlBa87yi/Mdjv7Tip2cyVbLj5o0cFPN4EVkuTwb3GDDyUx2DGnGw==
+  dependencies:
+    buffer-from "^1.0.0"
+    source-map "^0.6.0"
+
 source-map-support@^0.5.21:
   version "0.5.21"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.21.tgz#04fe7c7f9e1ed2d662233c28cb2b35b9f63f6e4f"
@@ -4232,6 +4283,11 @@ tr46@^3.0.0:
   dependencies:
     punycode "^2.1.1"
 
+tree-kill@1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/tree-kill/-/tree-kill-1.2.2.tgz#4ca09a9092c88b73a7cdc5e8a01b507b0790a0cc"
+  integrity sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==
+
 ts-easing@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/ts-easing/-/ts-easing-0.2.0.tgz#c8a8a35025105566588d87dbda05dd7fbfa5a4ec"
@@ -4269,6 +4325,11 @@ ts-node@10.9.1:
     make-error "^1.1.1"
     v8-compile-cache-lib "^3.0.1"
     yn "3.1.1"
+
+tsconfck@^2.0.1:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/tsconfck/-/tsconfck-2.0.2.tgz#860a488f9acd024a85b2db458888410009b5383d"
+  integrity sha512-H3DWlwKpow+GpVLm/2cpmok72pwRr1YFROV3YzAmvzfGFiC1zEM/mc9b7+1XnrxuXtEbhJ7xUSIqjPFbedp7aQ==
 
 tsconfig-paths@^4.1.2:
   version "4.1.2"
@@ -4383,7 +4444,16 @@ vite-node@0.26.3:
     source-map-support "^0.5.21"
     vite "^3.0.0 || ^4.0.0"
 
-"vite@^3.0.0 || ^4.0.0", vite@^4.0.4:
+vite-tsconfig-paths@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/vite-tsconfig-paths/-/vite-tsconfig-paths-4.0.3.tgz#6a3a29f5a32fb2cb0001361875e760dd436fdc09"
+  integrity sha512-gRO2Q/tOkV+9kMht5tz90+IaEKvW2zCnvwJV3tp2ruPNZOTM5rF+yXorJT4ggmAMYEaJ3nyXjx5P5jY5FwiZ+A==
+  dependencies:
+    debug "^4.1.1"
+    globrex "^0.1.2"
+    tsconfck "^2.0.1"
+
+"vite@^3.0.0 || ^4.0.0":
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/vite/-/vite-4.0.4.tgz#4612ce0b47bbb233a887a54a4ae0c6e240a0da31"
   integrity sha512-xevPU7M8FU0i/80DMR+YhgrzR5KS2ORy1B4xcX/cXLsvnUWvfHuqMmVU6N0YiJ4JWGRJJsLCgjEzKjG9/GKoSw==
