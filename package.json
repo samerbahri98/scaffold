@@ -1,7 +1,7 @@
 {
   "name": "skfold",
   "version": "0.0.0",
-  "license": "MIT",
+  "license": "AGPLv3",
   "scripts": {},
   "private": true,
   "dependencies": {
