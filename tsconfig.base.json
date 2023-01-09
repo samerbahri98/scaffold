@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@skaffold/ts-interfaces": ["libs/ts-interfaces/src/index.ts"]
+      "@skfold/ts-interfaces": ["libs/ts-interfaces/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

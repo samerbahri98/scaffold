@@ -5,7 +5,7 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 import { Login, Home } from './pages';
-import { User } from '@skaffold/ts-interfaces';
+import { User } from '@skfold/ts-interfaces';
 
 type ProtectedRouteProps = {
   children: React.ComponentElement<{}, any>;
